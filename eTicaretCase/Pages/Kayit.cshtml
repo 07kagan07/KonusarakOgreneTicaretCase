@@ -1,0 +1,45 @@
+﻿@page
+@model eTicaretCase.Pages.KayitModel
+@{
+
+	<div class="container-lg mt-5">
+		<div class="row justify-content-center align-item-center">
+			<div class="col-sm-12 col-md-4 col-lg-2">
+
+				<h1 class="mb-3">Kayıt Ol</h1>
+
+				<form method="post">
+					<div asp-validation-summary="All" class="text-danger"></div>
+
+					<div class="mb-3">
+						<label class="form-label" asp-for="Model.Email">Email Adresiniz</label>
+						<input type="text" asp-for="Model.Email" />
+						<span asp-validation-for="Model.Email" class="text-danger"></span>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label" asp-for="Model.Sifre">Şifre</label>
+						<input type="password" asp-for="Model.Sifre" />
+						<span asp-validation-for="Model.Sifre" class="text-danger"></span>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label" asp-for="Model.SifreTekrar">Şifre Tekrar</label>
+						<input type="password" asp-for="Model.SifreTekrar" />
+						<span asp-validation-for="Model.Sifre" class="text-danger"></span>
+					</div>
+
+					<div class="mb-3">
+
+						<button class="btn btn-primary" type="submit">Kayıt Ol</button>
+
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+
+
+	</div>
+}
